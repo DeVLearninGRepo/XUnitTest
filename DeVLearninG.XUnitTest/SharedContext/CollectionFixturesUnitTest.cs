@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 
-namespace DeVLearninG.XUnitTest
+namespace DeVLearninG.MyReservation.Test
 {
-    public class UnitTest1
+    public class CollectionFixturesUnitTest
     {
         [Fact]
         public void Test1()
