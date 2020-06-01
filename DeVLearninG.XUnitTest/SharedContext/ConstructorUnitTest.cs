@@ -10,13 +10,18 @@ using Xunit;
 
 namespace DeVLearninG.MyReservation.Test
 {
-    public class ConstructorUnitTest
+    public class ConstructorUnitTest : IDisposable
     {
         ConstructorHeavyCalculator _heavyCalculator;
 
         public ConstructorUnitTest()
         {
             _heavyCalculator = new ConstructorHeavyCalculator();
+        }
+
+        public void Dispose()
+        {
+            _heavyCalculator.Dispose();
         }
 
         [Fact]
